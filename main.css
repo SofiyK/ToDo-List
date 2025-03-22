@@ -1,0 +1,36 @@
+#inputBlock {
+    border:4px solid rgb(39, 121, 222);
+    border-radius: 30px;
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    left: 25%;
+    right: 25%;
+    margin: 2px;
+    background-color: rgb(228, 234, 252);
+}
+
+#taskList{
+    border:3px solid rgb(86, 160, 249);
+    border-radius: 30px;
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    text-align: left;
+    left: 25%;
+    right: 25%;
+    padding-left: 30px;
+}
+
+input {
+    border: 4px solid rgb(39, 121, 222);
+    border-radius: 15px;
+    padding: 5px
+}
+
+#btntask {
+    background-color: rgb(117, 212, 165);
+    border-radius: 15px;
+    padding: 7px;
+}
