@@ -44,14 +44,17 @@ function clearAll() {
 
 ////////---------------------------
 function loadTasks() {
-    const del = /[]""/g
-    arr = localStorage.getItem('tasks').replace('[','').replace(']','');
-    arr = arr.replace(/"/g,'');
-    arr = arr.split(",");
-    for (let i=0; i < arr.length; i++) {
-        console.log(arr[i]);
-        addTaskToList(arr[i]);    
-    }
+    if (localStorage.length != 0) {
+        const del = /[]""/g
+        arr = localStorage.getItem('tasks').replace('[','').replace(']','');
+        arr = arr.replace(/"/g,'');
+        arr = arr.split(",");
+        for (let i=0; i < arr.length; i++) {
+            console.log(arr[i]);
+            addTaskToList(arr[i]);    
+        };
+    };
+    
 };
 
 function saveTaskInLocalStorage() {
